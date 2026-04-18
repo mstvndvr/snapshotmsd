@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapshot.msd</title>
+    <link rel="icon" type="image/png" href="../img/2.webp">
+    <link rel="stylesheet" href="popup.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <a href="../img/2.webp">
+            <img src="../img/2.webp" alt="Logo" class="logo">
+        </a>
+        <div class="brand-tagline-container">
+        <h2 class="brand"><span>Snapshot.msd</span></h2>
+        <p class="tagline">Capture what you feel, not what you see</p>
+        </div>
+    </div>
+    <div class="nav-container">
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#bday">Birthdays</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#photoshoot">Photoshoot</a></li>
+                <li><a href="#portrait">Portraits</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<h1 id="bday">Birthdays!</h1>
+<p class="descr">Advance Happy Birthday to you! <br>
+    Do you want pre-birthday photoshoot? Book us now!<br>
+    I will make your birthday unforgettable!<br>
+</p>
+<section class="album-gallery">
+    <div id="gallery-gallery">
+        <ul>
+            <li>
+                <img src="../img/21.webp" alt="photo">
+                <img src="../img/22.webp" alt="photo">
+                <img src="../img/23.webp" alt="photo">
+            </li>
+            <li>
+                <img src="../img/24.webp" alt="photo">
+                <img src="../img/25.webp" alt="photo">
+                <img src="../img/26.webp" alt="photo">
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+<div class="container">
+    <!-- Trigger/Open The Modal -->
+    <button class="btn btn-primary book-btn turned-button">Book us now!</button>
+    <!-- The Modal -->
+    <div id="modalDialog" class="modal">
+        <div class="modal-content animate-top">
+            <div class="modal-header">
+                <h5 class="modal-title">Book us now!</h5>
+                <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="contactFrm">
+                <div class="modal-body">
+                    <div class="response"></div>
+
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" class="form-control" placeholder="Your message here" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<h1 id="events">Events!</h1>
+<p class="descr">Having fun and too busy to take pictures?<br>
+    Do you want to capture moments of events? Book us now!<br>
+    I will make your events unforgettable!<br>
+</p>
+<section class="album-gallery">
+    <div id="gallery-gallery">
+        <ul>
+            <li>
+                <img src="../img/31.webp" alt="photo">
+                <img src="../img/32.webp" alt="photo">
+                <img src="../img/33.webp" alt="photo">
+            </li>
+            <li>
+                <img src="../img/34.webp" alt="photo">
+                <img src="../img/35.webp" alt="photo">
+                <img src="../img/36.webp" alt="photo">
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+<div class="container">
+    <!-- Trigger/Open The Modal -->
+    <button class="btn btn-primary book-btn turned-button">Book us now!</button>
+</div>
+
+<h1 id="photoshoot">Photoshoot!</h1>
+<p class="descr">Do you need an all-around photographer?<br>
+    Sports photography? Theather Photography? and more?<br>
+    I got you all covered, book us now!<br>
+</p>
+<section class="album-gallery">
+    <div id="gallery-gallery">
+        <ul>
+            <li>
+                <img src="../img/41.webp" alt="photo">
+                <img src="../img/42.webp" alt="photo">
+                <img src="../img/43.webp" alt="photo">
+            </li>
+            <li>
+                <img src="../img/44.webp" alt="photo">
+                <img src="../img/45.webp" alt="photo">
+                <img src="../img/46.webp" alt="photo">
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+<div class="container">
+    <!-- Trigger/Open The Modal -->
+    <button class="btn btn-primary book-btn turned-button">Book us now!</button>
+</div>
+
+<h1 id="portrait">Portraits!</h1>
+<p class="descr">Modeling? Fashion? or just a simple portrait?<br>
+    Do you need a good photographer and a good quality pictures?<br>
+    I got you, from different poses and angles, I do it all<br>
+</p>
+<section class="album-gallery">
+    <div id="gallery-gallery">
+        <ul>
+            <li>
+                <img src="../img/51.webp" alt="photo">
+                <img src="../img/52.webp" alt="photo">
+                <img src="../img/53.webp" alt="photo">
+            </li>
+            <li>
+                <img src="../img/54.webp" alt="photo">
+                <img src="../img/55.webp" alt="photo">
+                <img src="../img/50.webp" alt="photo">
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+<div class="container">
+    <!-- Trigger/Open The Modal -->
+    <button class="btn btn-primary book-btn turned-button">Book us now!</button>
+</div>
+<script src="popup.js"></script>
+
+<!-- Back to top button -->
+<div id="back-to-top" onclick="backtop()">
+    <span style="color: white;">&uarr;</span>
+</div>
+<section id="footer">
+    <div class="footer">
+        <a href="https://www.facebook.com/profile.php?id=61554516897638&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/mrcstvndvr?igsh=NDllMjRic3c4YWt3"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@mrcstvndvr?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
+        <a href="https://t.me/mrcstvndvr"><i class="fab fa-telegram"></i></a>
+        <p class="copyright">All rights reserved 2025. Snapshot.msd</p>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
